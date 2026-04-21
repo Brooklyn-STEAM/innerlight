@@ -4,16 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/main.css">
-    <title>My Project</title>
+    <title>Contact</title>
 </head>
 <body>
-    <h1 class="text-center text-5xl font-bold my-12 text-primary underline decoration-primary decoration-4 underline-offset-8">Welcome!</h1>
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
+          </button>
+        </div>
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path> </svg>
+          </button>
+        </div>
+      </div>
+   <hr class="">
+   <br>
+      <h1 class="text-center text-4xl">☎️ Contact</h1>
+      <br>
+<hr>
+<br>
+<br>
+<img src="/src/assets/phone.jpeg" width="300" alt="phone" class="ml-4"> 
 
-    <include src="components/hello_world.html"></include>
+<form class="p-4 " action="https://form-to-email.steamc.workers.dev/" method="post">
+    <input name="send-to" value="AEstervil@steamcenter.org" hidden="">
 
-    <section class="text-center">
-        <a href="https://daisyui.com/docs" target="_blank" class="btn btn-primary">DaisyUI Documentation</a>
-        <a href="https://tailwindcss.com/docs" target="_blank" class="btn btn-secondary">Tailwind CSS Documentation</a>
-    </section>
+   <label><iconify-icon icon="mage:phone-fill" width="24" height="24"></iconify-icon>Phone:</label>
+   <input type="text" placeholder="insert number here" name="phone_number">
+   <br>
+
+  <label><iconify-icon icon="icon-park-solid:edit-name" width="24" height="24"></iconify-icon>Name:</label>
+   <input type="text" placeholder="insert name here" name="full_name">
+   <br>
+
+   <label><iconify-icon icon="streamline:send-email-solid" width="24" height="24"></iconify-icon>Email:</label>
+   <input type="email" placeholder="insert email here" name="email_address">
+   <br>
+  
+<input type="submit">
+
+<input type="reset">
+</form>
+
 </body>
 </html>
