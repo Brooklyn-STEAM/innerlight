@@ -38,6 +38,7 @@
     --depth: 1;
     --noise: 0;  
 };
+@import url('https://fonts.googleapis.com/css2?family=Medula+One&display=swap');
 
 @plugin "daisyui/theme" {
   name: "caramellatte";
@@ -74,4 +75,6 @@
   --noise: 1;
 }
 
-
+.font-medula {
+  font-family: 'Medula One', cursive;
+}
