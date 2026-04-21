@@ -7,13 +7,60 @@
     <title>My Project</title>
 </head>
 <body>
-    <h1 class="text-center text-5xl font-bold my-12 text-primary underline decoration-primary decoration-4 underline-offset-8">Welcome!</h1>
-
-    <include src="components/hello_world.html"></include>
-
-    <section class="text-center">
-        <a href="https://daisyui.com/docs" target="_blank" class="btn btn-primary">DaisyUI Documentation</a>
-        <a href="https://tailwindcss.com/docs" target="_blank" class="btn btn-secondary">Tailwind CSS Documentation</a>
-    </section>
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a>About page</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Inner Light</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>About page</a></li>
+            <li>
+              <details>
+                <summary>Product</summary>
+                <ul class="p-2 bg-base-100 w-40 z-1">
+                  <li><a>Merch page</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Preview page</a></li>
+            <li><a>Contact page</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+        </div>
+      </div>
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+          <img
+            src="/src/assets/bright light.png"
+            class="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 class="text-5xl font-bold">Welcome to inner light!</h1>
+            <p class="py-6">
+                Welcome to Inner Light—our goal is to support mental well-being through interactive games designed to calm, focus, and uplift. Whether you're looking to reduce stress, improve focus, or simply find a moment of calm in your day, Inner Light offers a variety of engaging activities to help you achieve a sense of inner peace and balance.
+            </p>
+            <button class="btn btn-secondary">Get Started</button>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
