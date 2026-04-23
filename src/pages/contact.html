@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/main.css">
     <title>Contact</title>
-    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
 </head>
 <body>
     <div class="navbar bg-base-100 shadow-sm">
@@ -30,48 +29,27 @@
 <hr>
 <br>
 <br>
-
-<div class="flex">
 <img src="/src/assets/phone.jpeg" width="300" alt="phone" class="ml-4"> 
-<form action="">
-    <div class="m-20 mt-30 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-    <div class="color-base-100 rounded-xl card-body">
-      <fieldset>  
-        <p class="text-2xl font-serif">Our Contact:</p>
-        <br>
-        <p><iconify-icon icon="line-md:phone-twotone" width="18" height="18"></iconify-icon>Phone: +1 123-456-7890</p>
-        <br>
-        <br>
-        <p><iconify-icon icon="line-md:email-alt-twotone" width="18" height="18"></iconify-icon>Email: innerlight@cyberchase.cc</p>
-        <br>
-        <br>
-        <p><iconify-icon icon="line-md:github-twotone" width="18" height="18"></iconify-icon>Github: github.com/Brooklyn-STEAM/innerlight</p>
-        <br>
-      </fieldset>
-    </form>
-    <form action="">
-        <div class="m-20 ml-20 card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-        <div class="card-body">
-          <p class="text-2xl font-serif">Your Contact:</p>
-            <fieldset>
-            <iconify-icon icon="mdi:rename" width="14" height="14"></iconify-icon><label class="label">Name</label>
-            <input type="text" class="input" placeholder="insert name here" />
-            <br>
-            <br>
-            <iconify-icon icon="fe:phone" width="14" height="14"></iconify-icon><label class="label">Phone</label>
-            <input type="tel" class="input validator tabular-nums" required placeholder="insert number here" 
-      pattern="[0-9]*" minlength="10" maxlength="10" title="Must be 10 digits" />
-    <p class="validator-hint">Must be 10 digits</p>
-    <iconify-icon icon="ic:baseline-email" width="14" height="14"></iconify-icon><label class="label">Email</label>
-            <input class="input validator" type="email" required placeholder="mail@site.com" />
-            <div class="validator-hint">Enter valid email address</div>
-            <button type="submit" class="btn btn-neutral mt-4">Submit</button>
-            <button type="reset" class="btn btn-neutral mt-4">Reset</button>
-          </fieldset>
-        </form>
-</div>
-  </div>
-</div>
+
+<form class="p-4 " action="https://form-to-email.steamc.workers.dev/" method="post">
+    <input name="send-to" value="AEstervil@steamcenter.org" hidden="">
+
+   <label><iconify-icon icon="mage:phone-fill" width="24" height="24"></iconify-icon>Phone:</label>
+   <input type="text" placeholder="insert number here" name="phone_number">
+   <br>
+
+  <label><iconify-icon icon="icon-park-solid:edit-name" width="24" height="24"></iconify-icon>Name:</label>
+   <input type="text" placeholder="insert name here" name="full_name">
+   <br>
+
+   <label><iconify-icon icon="streamline:send-email-solid" width="24" height="24"></iconify-icon>Email:</label>
+   <input type="email" placeholder="insert email here" name="email_address">
+   <br>
+  
+<input type="submit">
+
+<input type="reset">
+</form>
 
 </body>
 </html>
