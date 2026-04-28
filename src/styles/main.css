@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @plugin "daisyui"{
   themes: light --default;
 }
@@ -110,8 +111,5 @@
 }
 
 .font-medula {
-  font-family: 'Medula One', serif;
-}
-.cursive {
   font-family: 'Medula One', cursive;
 }
