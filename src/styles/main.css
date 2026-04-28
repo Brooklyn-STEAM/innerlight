@@ -110,5 +110,8 @@
 }
 
 .font-medula {
+  font-family: 'Medula One', serif;
+}
+.cursive {
   font-family: 'Medula One', cursive;
 }
