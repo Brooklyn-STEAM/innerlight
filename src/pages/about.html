@@ -9,28 +9,64 @@
 </head>
 
 <body>
-  <br>
-  <br>
-  <br>
+ <!-- Start of the Nav -->
+ <div class="navbar bg-base-100 shadow-sm">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+        </div>
+        <ul
+          tabindex="-1"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <li><a>About page</a></li>
+          <li>
+            <a>Parent</a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <a href="index.html" class="btn btn-ghost text-xl">Inner Light</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="about.html">About page</a></li>
+        <li>
+            <a href="products.html">Product</a>
+        </li>
+        <li>
+            <a href="merch.html">Merch page</a>
+        </li>
+        <li>
+            <a href="preview.html">Preview page</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact page</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+    </div>
+  </div>
   <hr>
-  <h1 class="text-5xl text-center font-medula">About Us</h1>
-  <hr>
-  <br>
-  <br>
+<!-- The end of the Nav -->
   <div class="hero bg-base-200 min-h-screen">
     <div class="hero-content flex-col lg:flex-row">
       <img src="/src/assets/yellowlight.png"
         class="max-w-sm rounded-md shadow-lg" />
       <div>
         <h1 class="text-5xl font-bold font-medula">Our Story</h1>
-        <p class="py-6 font font-medula text-2xl">
-          Our friend group consisted of Abigail, Emmanuel, and Chrisley. While we were in school, the teacher introduced us to
-          a new student in our class. He was diagnosed with depression because he experienced many hardships in his life. Our friend group tried everything to cheer him up but nothing worked. So Abigail had a
-          really good idea, making a game about his situation. So after school, we worked on a game about a child's
-          parents going through a divorce and him working his way through it. 2 weeks later, we presented him the game
-          and asked to play it. While he was playing, he started to feel like he was heard and that someone understood what he was going through and felt better. When he finished
-          the game, he thanked us and said he felt a bit better about his unfortuante situation. After he went home, we
-          started making other games for kids that had other mental health problems because of unfortuante situations.
+        <p class="py-6 font font-medula text-xl">
+          Our friend group consisted of Abigail, Emmanuel, and Chrisley. While we were in school,
+          a new student showed up in our class. He was depressed because he experienced many hardships in his life. But Abigail had a
+          really good idea, making a game about his situation. After school, we started working on a game related to his situation. 2 weeks later, we presented him the game
+          and asked him to play it. While he was playing, he started to feel like someone understood what he was going through and felt better. When he finished
+          the game, he thanked us and said he felt a bit better. After he went home, we
+          started making other games for kids that had other mental health problems.
         </p>
         <br>
         <br>
