@@ -1,58 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/main.css">
     <title>My Project</title>
 </head>
+
 <body>
- <!-- Start of the Nav -->
- <div class="navbar bg-base-100 shadow-sm">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+    <!-- Start of the Nav -->
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a>About page</a></li>
+                    <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost text-xl">Inner Light</a>
         </div>
-        <ul
-          tabindex="-1"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-          <li><a>About page</a></li>
-          <li>
-            <a>Parent</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="about.html">About page</a></li>
+                <li>
+                    <a href="products.html">Product</a>
+                </li>
+                <li>
+                    <a href="merch.html">Merch page</a>
+                </li>
+                <li>
+                    <a href="preview.html">Preview page</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact page</a>
+                </li>
             </ul>
-          </li>
-          <li><a>Item 3</a></li>
-        </ul>
-      </div>
-      <a href="index.html" class="btn btn-ghost text-xl">Inner Light</a>
+        </div>
+        <div class="navbar-end">
+        </div>
     </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a href="about.html">About page</a></li>
-        <li>
-            <a href="products.html">Product</a>
-        </li>
-        <li>
-            <a href="merch.html">Merch page</a>
-        </li>
-        <li>
-            <a href="preview.html">Preview page</a>
-        </li>
-        <li>
-            <a href="contact.html">Contact page</a>
-        </li>
-      </ul>
+    <hr>
+    <!-- The end of the Nav -->
+    <div class="flex flex-wrap gap-4 justify-center p-4">
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <figure>
+                <img src="/src/assets/steam.png" alt="Steam game" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">Path of peace</h2>
+                <p>A game similar to bloom & balance that hit the steam market like a storm, truly a game anyone would love</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <figure>
+                <img src="/src/assets/mobilegame.png" alt="mobile game" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">Bloom & balance</h2>
+                <p>This wellness game has you do all sorts of calming activities, this game has been so popular that its on the nintendo switch!</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <figure>
+                <img src="/src/assets/switchgame.png" alt="Switch game" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">Wellness journey</h2>
+                <p>This is a wellness journey with a character you make goes on a wellness break that you and your character have to do things to take a break from life.</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <figure>
+                <img src="/src/assets/p5balance.png" alt="ps5 game" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">Balance</h2>
+                <p>can you make another but a compltly diffrent look but aout the same thing</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <figure>
+              <img
+                src="/src/assets/xbox.png"
+                alt="xbox" />
+            </figure>
+            <div class="card-body">
+                <br><br><br><br>
+              <h2 class="card-title">Breathe</h2>
+              <p>This game supports a mindfulness cooldown with a game full of easy and soft gameplay wihtout the rage.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-sm">
+            <figure>
+              <img
+                src="/src/assets/p5game.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Wellness</h2>
+              <p>A calming wellness game where you explore peaceful landscapes, practice mindfulness, build healthy habits, and improve your mind and body at your own pace.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
     </div>
-    <div class="navbar-end">
-    </div>
-  </div>
-  <hr>
-<!-- The end of the Nav -->
-<div class=" bg-base-200 min-h-screen">
 
 </body>
+
 </html>
