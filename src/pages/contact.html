@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/main.css">
     <title>Contact</title>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+
+
 </head>
 <body>
   <div class=" bg-base-200 min-h-screen">
@@ -16,19 +19,6 @@
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
         </div>
-        <ul
-          tabindex="-1"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-          <li><a>About page</a></li>
-          <li>
-            <a>Parent</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </li>
-          <li><a>Item 3</a></li>
-        </ul>
       </div>
       <a href="index.html" class="btn btn-ghost text-xl">Inner Light</a>
     </div>
@@ -54,33 +44,66 @@
   </div>
   <hr>
 <!-- The end of the Nav -->
-   <hr class="">
+
    <br>
+
       <h1 class="text-center text-4xl">☎️ Contact</h1>
       <br>
 <hr>
 <br>
-<br>
-<img src="/src/assets/phone.jpeg" width="300" alt="phone" class="ml-4"> 
-
-<form class="p-4 " action="https://form-to-email.steamc.workers.dev/" method="post">
-    <input name="send-to" value="AEstervil@steamcenter.org" hidden="">
-
-   <label><iconify-icon icon="mage:phone-fill" width="24" height="24"></iconify-icon>Phone:</label>
-   <input type="text" placeholder="insert number here" name="phone_number">
-   <br>
-
-  <label><iconify-icon icon="icon-park-solid:edit-name" width="24" height="24"></iconify-icon>Name:</label>
-   <input type="text" placeholder="insert name here" name="full_name">
-   <br>
-
-   <label><iconify-icon icon="streamline:send-email-solid" width="24" height="24"></iconify-icon>Email:</label>
-   <input type="email" placeholder="insert email here" name="email_address">
-   <br>
+ <div class="flex flex-row gap-10">
+     <img src="/src/assets/phone.jpeg" width="300" alt="phone" class="ml-4">
   
-<input type="submit">
+ 
+     <div class="mt-16 card bg-base-100 w-full h-full max-w-sm shrink-0 shadow-2xl mt-5">
+        <div class="card-body">
+            <form class="p-4 " action="https://form-to-email.steamc.workers.dev/" method="post">
+               <p class="text-2xl font-serif">Your Contact:</p>
+                <input name="send-to" value="AEstervil@steamcenter.org" hidden="">
+            <fieldset class="fieldset">
+            <label><iconify-icon icon="icon-park-twotone:edit-name" width="15" height="15"></iconify-icon><label class="label">Name</label>
+            <input type="text" class="input" placeholder="insert name here">
+            <br>
+            <br>
+            <iconify-icon icon="line-md:phone-twotone" width="15" height="15"></iconify-icon><label class="label">Phone</label>
+            <input type="text" class="input" placeholder="insert number here" />
+            <br>
+            <br>
+            <iconify-icon icon="line-md:email-twotone" width="15" height="15"></iconify-icon><label class="label">Email</label>
+            <input class="input validator" type="email" required placeholder="input email here" />
+            <div class="validator-hint">Enter valid email address</div>
+        
+       
+            <div>
+            <input class="btn btn-neutral" type="submit">
+            <input class="btn btn-neutral" type="reset">
+        </div>
+    </form>
+     
+          </fieldset>
+        </div>
+      </div>
+       
 
-<input type="reset">
+      <form action="https://form-to-email.steamc.workers.dev/" method="post">
+        <input name="send-to" value="AEstervil@steamcenter.org" hidden="">
+      <div class="card bg-base-100 w-full h-full max-w-sm shrink-0 shadow-2xl mt-5">
+        <div class="card-body">
+            <p class="text-2xl font-serif">Our Contacts:</p>
+
+       <p><strong>Chief Organizer: </strong>aestervil@brooklynsteamcenter.org </p>
+       <p><strong>Chief Developer: </strong>clabastille@brooklynsteamcenter.org </p>
+       <p><strong>Chief Designer: </strong>erobledo@brooklynsteamcenter.org </p>
+       <p><strong>Phone: </strong>+1 123-456-7890</p>
+       <p><strong>Github: </strong>github.com/Brooklyn-STEAM/innerlight</p>
+       <fieldset class="fieldset mt-4">
+        <legend class="fieldset-legend">Your Message</legend>
+        <textarea class="textarea h-24" placeholder="What are your thoughts or concerns?"></textarea>
+        <input class="btn btn-neutral max-w-xs" type="submit">
+ 
+      </fieldset>
+</form>
+    </div>
 </form>
 </body>
 </html>
