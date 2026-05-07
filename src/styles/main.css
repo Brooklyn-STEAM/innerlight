@@ -113,3 +113,9 @@
 .font-medula {
   font-family: 'Medula One', cursive;
 }
+.hide-on-mobile {
+  display: none;
+}
+.hide-on-pc {
+  display: none;
+}
